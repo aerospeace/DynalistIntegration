@@ -1,0 +1,63 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Skill to move shopping and todo list to dynalist",
+          "examplePhrases": [
+            "Alexa add eggs to the shopping list",
+            "Alexa add contact plumber to my todo list"
+          ],
+          "name": "DynalistIntegration",
+          "description": "This skill will copy items added to my todo or shopping list to dynalist and afterwards delete them from alexa built-in list"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "householdList": {
+        "endpoint": {
+          "uri": ""
+        }
+      }
+    },
+    "permissions": [
+      {
+        "name": "alexa::household:lists:read"
+      },
+      {
+        "name": "alexa::household:lists:write"
+      }
+    ],
+    "events": {
+      "endpoint": {
+        "uri": "https://my-assistant.aeros.fr/list/",
+        "sslCertificateType": "Wildcard"
+      },
+      "subscriptions": [
+        {
+          "eventName": "ITEMS_CREATED"
+        },
+        {
+          "eventName": "ITEMS_UPDATED"
+        },
+        {
+          "eventName": "ITEMS_DELETED"
+        },
+        {
+          "eventName": "LIST_CREATED"
+        },
+        {
+          "eventName": "LIST_UPDATED"
+        },
+        {
+          "eventName": "LIST_DELETED"
+        }
+      ]
+    },
+    "manifestVersion": "1.0"
+  }
+}
