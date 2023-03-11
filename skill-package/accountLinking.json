@@ -1,0 +1,29 @@
+{
+  "accountLinkingRequest": {
+    "skipOnEnablement": "false",
+    "type": "AUTH_CODE",
+    "authorizationUrl": "https://www.amazon.com/ap/oa",
+    "domains": [
+      "aeros.fr"
+    ],
+    "clientId": "amzn1.application-oa2-client.846f2cbfcdff4ed6ad528de689462655",
+    "scopes": [
+      "profile"
+    ],
+    "clientSecret": "dbf37ed2bfc3a33e2c34891410cf32b68737ad63f8325119cbf4e3887fff247e",
+      "redirectUrls": [
+	  "https://aeros.fr"	  
+    ],
+      "accessTokenUrl": "https://api.amazon.com/auth/o2/token",
+    "authorizationUrlsByPlatform": [
+     {
+       "platformType": "iOS",
+       "platformAuthorizationUrl": "https://aeros.fr"
+     },
+     {
+       "platformType": "Android",
+	 "platformAuthorizationUrl": "https://aeros.fr"
+     }
+    ]    
+  }
+}
