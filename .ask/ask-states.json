@@ -2,7 +2,7 @@
   "askcliStatesVersion": "2020-03-31",
   "profiles": {
     "default": {
-      "skillId": "amzn1.ask.skill.755c29a4-1435-4490-bab9-f6dae3303ece",
+      "skillId": "amzn1.ask.skill.b2ec5ef1-e29a-4b6b-8124-0f6033e0e2ba",
       "skillMetadata": {
         "lastDeployHash": "Z06870xkgpU0t1rfLyYyBgVbsow="
       }
